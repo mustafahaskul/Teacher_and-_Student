@@ -6,3 +6,4 @@ if($_GET){
     $del = $query->execute(array($id));
     header("Location: students.php");
 }
+

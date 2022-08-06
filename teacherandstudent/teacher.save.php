@@ -18,3 +18,4 @@ catch (PDOException $exception)
     print $exception->getMessage();
 }
 $db=null;
+

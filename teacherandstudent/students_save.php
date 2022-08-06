@@ -23,6 +23,3 @@ catch (PDOException $exception)
 }
 $db=null;
 
-
-
-?>

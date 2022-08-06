@@ -2,6 +2,7 @@
 
 <body>
 
+
     <?php
     if ($_POST) {
         $new_name = $_POST["name"];
@@ -9,7 +10,7 @@
         $db = new PDO('mysql:host=localhost;dbname=teacher_and_student', 'root', '');
         $query = $db->prepare("update teachers set name = ? where id = ?");
         $update = $query->execute(array($new_name, $update_teacher_id));
-        header("Location: teacher.php");
+        header("Location: teacher.php");  
     }
 
     if ($_GET) {
